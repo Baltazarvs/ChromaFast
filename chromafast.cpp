@@ -44,9 +44,9 @@ int main(int argc, char** argv)
 	byte righmost = (byte)(coli >> 0);
 	
 	std::cout << "Color: #" << std::hex << coli << std::endl << std::endl;
-	std::cout << "Leftmost: " << (word)leftmost << " | " << std::bitset<8>(leftmost) << std::endl; 
-	std::cout << "Middle  : " << (word)middle << " | " << std::bitset<8>(middle) << std::endl;
-	std::cout << "Rightmost: " << (word)righmost << " | " << std::bitset<8>(righmost) << std::endl;
+	std::cout << "Leftmost : " << (word)leftmost << "\t" << std::bitset<8>(leftmost) << std::endl; 
+	std::cout << "Middle   : " << (word)middle << "\t" << std::bitset<8>(middle) << std::endl;
+	std::cout << "Rightmost: " << (word)righmost << "\t" << std::bitset<8>(righmost) << std::endl;
 	
 	leftmost &= ((leftmost >> 3) << 3);
 	middle &= ((middle >> 3) << 3);
